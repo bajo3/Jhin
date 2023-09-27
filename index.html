@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Landing Page de Servicios Profesionales</title>
+</head>
+<body>
+    <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+     <!-- Menú de navegación -->
+     <nav class="menu">
+        <div class="menu-logo">
+            <h1>Tu Logo</h1>
+        </div>
+        <ul class="menu-list">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <header>
+            <div class="parent">
+                <div class="div1"><img src="assets/img/1.jpg" alt=""> </div>
+                <div class="div2"><img src="assets/img/5.png" alt=""> </div>
+                <div class="div3"> <img src="assets/img/4.jpg " alt=""></div>
+                </div>
+          </div>
+    </header>
+
+    <section class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li><strong>Servicio 1:</strong> Descripción detallada del servicio 1.</li>
+            <li><strong>Servicio 2:</strong> Descripción detallada del servicio 2.</li>
+            <li><strong>Servicio 3:</strong> Descripción detallada del servicio 3.</li>
+        </ul>
+    </section>
+
+    <section class="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonial">
+            <blockquote>
+                "Excelente servicio. Resolveron mi problema de manera eficiente y rápida."
+            </blockquote>
+            <p>- Cliente Satisfecho 1</p>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                "Los servicios profesionales son realmente expertos en lo que hacen. Los recomendaría a todos."
+            </blockquote>
+            <p>- Cliente Satisfecho 2</p>
+        </div>
+    </section>
+
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta o necesitas nuestros servicios, no dudes en contactarnos.</p>
+        <form action="contact.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Servicios Profesionales</p>
+    </footer>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
