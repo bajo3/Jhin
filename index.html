@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/styles.css">
     <title>Jhin</title>
 </head>
@@ -24,12 +26,15 @@
         <!-- Menú de navegación -->
         <nav class="menu">
             <div class="menu-logo">
-                <h1>Tu Logo</h1>
+                <img src="assets/img/Logo.png" alt="">
+                <!-- Icono de silencio -->
+                <i class="fas fa-volume-up" id="mute-icon"></i>
+
             </div>
             <ul class="menu-list">
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#servicios">Biografia</a></li>
+                <li><a href="#testimonios">Habilidades</a></li>
+                <li><a href="#contacto">Galeria</a></li>
             </ul>
             <div class="menu-toggle">
                 <div class="bar"></div>
@@ -54,32 +59,62 @@
         <section class="info">
             <div class="container-img"><img src="assets/img/3.png" alt=""></div>
             <div class="container-text">
-                <p>Jhin es un psicópata meticuloso que cree que el asesinato es un arte. Alguna vez un prisionero jonio, pero liberado por elementos sombríos dentro del concejo líder de Jonia, el asesino en serie ahora presta sus servicios como sicario a esa camarilla. Utilizando su arma como un pincel, Jhin crea obras de arte brutales que horrorizan a sus víctimas y testigos. Mostrar sus obras de horripilante drama le causa un placer retorcido, lo que lo convierte en la mejor opción para mandar el más poderoso de los mensajes: el terror.</p>
+                <p>Jhin es un psicópata meticuloso que cree que el asesinato es un arte. Alguna vez un prisionero jonio,
+                    pero liberado por elementos sombríos dentro del concejo líder de Jonia, el asesino en serie ahora
+                    presta sus servicios como sicario a esa camarilla. Utilizando su arma como un pincel, Jhin crea
+                    obras de arte brutales que horrorizan a sus víctimas y testigos. Mostrar sus obras de horripilante
+                    drama le causa un placer retorcido, lo que lo convierte en la mejor opción para mandar el más
+                    poderoso de los mensajes: el terror.</p>
             </div>
         </section>
 
+        <div class="container-skills">
+            <h1>Habilidades</h1>
+            <div class="iconos">
+                <!-- Iconos de habilidades -->
+                <div class="icono" data-index="0">
+                    <img src="assets/img/Jhin_P.png" alt="Habilidad 1">
+                </div>
+                <div class="icono" data-index="1">
+                    <img src="assets/img/JhinQ.png" alt="Habilidad 2">
+                </div>
+                <div class="icono" data-index="2">
+                    <img src="assets/img/JhinW.png" alt="Habilidad 3">
+                </div>
+                <div class="icono" data-index="3">
+                    <img src="assets/img/JhinE.png" alt="Habilidad 4">
+                </div>
+                <div class="icono" data-index="4">
+                    <img src="assets/img/JhinR.png" alt="Habilidad 4">
+                </div>
+            </div>
+            <div class="contenido">
+                
+                <!-- Área para mostrar el video y el texto -->
+                <div class="skills">
+                    
+                </div>
+                <div class="video">
+                    <video id="video-frame" controls autoplay loop>
+                        <source src="" type="video/webm">
+                        Tu navegador no admite la reproducción de video.
+                    </video>
+                </div>
+                <div class="texto">
+                    <p id="texto-habilidad">Texto de la habilidad</p>
+                </div>
+            </div>
+        </div>
 
-
-        <section class="contacto">
-            <h2>Contacto</h2>
-            <p>Si tienes alguna pregunta o necesitas nuestros servicios, no dudes en contactarnos.</p>
-            <form action="contact.php" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+        <section class="stats">
+            <img src="assets/img/Jhin-stats.png" alt="">
         </section>
-
         <footer>
             <p>&copy; 2023 Servicios Profesionales</p>
         </footer>
     </div>
 
-
+    <script src="assets/skills.js"></script>
     <script src="assets/app.js"></script>
 </body>
 
