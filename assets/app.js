@@ -7,16 +7,15 @@ const videoContainer = document.getElementById('video-container');
 const contenidoPrincipal = document.getElementById('contenido-principal');
 const videoPrincipal = contenidoPrincipal.querySelector('video'); // Selector del video dentro del contenido principal
 
-// Función para ocultar el video y el botón y luego iniciar el video después de 3 segundos
-function mostrarContenidoConRetraso() {
+// Función para mostrar el contenido principal y ocultar el video
+function mostrarContenido() {
+    contenidoPrincipal.classList.remove('hidden');
     videoContainer.style.display = 'none';
-    setTimeout(function () {
-        contenidoPrincipal.classList.remove('hidden');
-        videoPrincipal.play(); // Iniciar el video
-    }, 3000); // 3000 milisegundos (3 segundos)
+    document.body.classList.remove('overflow-hidden'); // Quitar overflow: hidden del body
+    videoPrincipal.play(); // Iniciar el video
 }
 
-entrarBtn.addEventListener('click', mostrarContenidoConRetraso);
+entrarBtn.addEventListener('click', mostrarContenido);
 
 menuToggle.addEventListener('click', () => {
     menuList.classList.toggle('active');
