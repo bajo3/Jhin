@@ -51,3 +51,6 @@ function toggleMute() {
 // Agrega un evento clic al ícono de silencio
 muteIcon.addEventListener('click', toggleMute);
 
+
+
+

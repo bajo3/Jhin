@@ -417,11 +417,43 @@ body {
 
     .container-skills .texto p {
         font-size: 14px;
+        margin-bottom: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-skills .texto p {
+        width: 100%;
     }
 }
 
 /* fin skilles  */
 
+/*Comienzo stats*/
+/* Estilos para dispositivos de escritorio */
+.imagen-desktop {
+    width: 100%;
+    display: block;
+}
+
+.imagen-movil{
+    margin-top: 10%;
+    width: 100%;
+    display: none;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .imagen-desktop {
+        display: none; /* Oculta la imagen en dispositivos móviles */
+    }
+
+    .imagen-movil {
+        display: block; /* Muestra la imagen en dispositivos móviles */
+    }
+}
+
+  
 
 /* Pie de página */
 footer {
