@@ -1,7 +1,7 @@
 // Array de URLs de videos de YouTube para cada habilidad
 const videoUrls = [
-    "/assets/img/skills/1.webm",
-    "/assets/img/skills/2.webm",
+    "assets/img/skills/1.webm",
+    "assets/img/skills/2.webm",
     "/assets/img/skills/3.webm",
     "/assets/img/skills/4.webm",
     "/assets/img/skills/5.webm"    
@@ -20,16 +20,13 @@ const iconos = document.querySelectorAll('.icono');
 const videoFrame = document.getElementById('video-frame');
 const textoHabilidad = document.getElementById('texto-habilidad');
 
-function mostrarHabilidadPredefinida() {
-    const index = 0 ; // Índice de la habilidad predefinida (en este caso, 0)
-    videoFrame.src = videoUrls[index];
-    textoHabilidad.textContent = textosHabilidades[index];
-}
+
 
 // Función para cambiar el video y el texto cuando se hace clic en un icono
 function cambiarContenido(event) {
     const index = event.currentTarget.getAttribute('data-index');
-    videoFrame.querySelector('source').src = videoUrls[index];
+    const source = videoFrame.querySelector('source');
+    source.src = videoUrls[index];
     videoFrame.load(); // Recargar el video
     textoHabilidad.textContent = textosHabilidades[index];
 }
@@ -39,4 +36,3 @@ iconos.forEach(icono => {
     icono.addEventListener('click', cambiarContenido);
 });
 
-mostrarHabilidadPredefinida();
